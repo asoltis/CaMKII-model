@@ -4,17 +4,16 @@ Code for:
 <img src="images/SoltisBiophysJ2010_Figure1.jpg">
 
 Contents:
-Main driver script:
-    - soltis_biophysJ2010_masterCompute.m
-ODE files:
-    - soltis_biophysJ2010_masterODEfile.m - integrates 4 model components
-    - soltis_biophysJ2010_BARsignaling_odefile.m - Beta adrenergic signaling pathway ODEs
-    - soltis_biophysJ2010_CaMKII_signaling_odefile.m - CaMKII signaling ODEs
-    - soltis_biophysJ2010_camodefile.m - Ca/Calmodulin/CaMKII activation ODEs
+- Main driver script: soltis_biophysJ2010_masterCompute.m
+- ODE files:
+    - soltis_biophysJ2010_masterODEfile.m - integrator script for 4 ODE model components
+    - soltis_biophysJ2010_CaMKII_signaling_ODEfile.m - CaMKII signaling pathway ODEs
+    - soltis_biophysJ2010_BARsignalling_odefile.m - Beta adrenergic signaling pathway ODEs
+    - soltis_biophysJ2010_camODEfile.m - Ca/Calmodulin/CaMKII activation ODEs
     - soltis_biophysJ2010_eccODEfile.m - Excitation-contraction coupling (ECC) ODEs
 
 Other:
-    - clipdata2.m - utility for pulling data points from matlab figures
-    - initial_conditions - directory with many initial conditions sets
+    - initial_conditions - directory with initial condition states
+    - clipdata2.m - utility for pulling data points from figures with Matlab
 
-The masterCompute file generates a large number of figures and shows examples of how to perform various types of analyses, including generating several of the paper's figures.
+
